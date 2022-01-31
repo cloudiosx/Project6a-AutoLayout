@@ -18,6 +18,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PO-2b-9tD">
                                 <rect key="frame" x="95" y="100" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4PO-2b-9tD" secondAttribute="height" multiplier="112:57" id="MYw-x2-XDp"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -26,6 +29,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9m-5A-rt3">
                                 <rect key="frame" x="95" y="244" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="v9m-5A-rt3" secondAttribute="height" multiplier="112:57" id="yEz-SP-pMV"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -34,6 +40,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iv-DL-1MH">
                                 <rect key="frame" x="95" y="388" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4iv-DL-1MH" secondAttribute="height" multiplier="112:57" id="dYo-eq-alm"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -44,11 +53,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4iv-DL-1MH" secondAttribute="bottom" constant="20" id="ElB-ch-hMw"/>
                             <constraint firstItem="4PO-2b-9tD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GQR-NV-VVw"/>
                             <constraint firstItem="4iv-DL-1MH" firstAttribute="top" secondItem="v9m-5A-rt3" secondAttribute="bottom" constant="30" id="Ncr-Y6-ibC"/>
+                            <constraint firstItem="4iv-DL-1MH" firstAttribute="height" secondItem="v9m-5A-rt3" secondAttribute="height" id="RCs-iE-4RO"/>
                             <constraint firstItem="4PO-2b-9tD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="U3m-fP-UV3"/>
                             <constraint firstItem="v9m-5A-rt3" firstAttribute="centerX" secondItem="4PO-2b-9tD" secondAttribute="centerX" id="aRe-lh-3vO"/>
                             <constraint firstItem="4iv-DL-1MH" firstAttribute="centerX" secondItem="v9m-5A-rt3" secondAttribute="centerX" id="c8c-CH-NfW"/>
+                            <constraint firstItem="v9m-5A-rt3" firstAttribute="height" secondItem="4PO-2b-9tD" secondAttribute="height" id="cRe-b9-lcw"/>
                             <constraint firstItem="v9m-5A-rt3" firstAttribute="top" secondItem="4PO-2b-9tD" secondAttribute="bottom" constant="30" id="vC0-U0-iqP"/>
                         </constraints>
                     </view>
